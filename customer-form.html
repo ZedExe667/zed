@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلاعات مشتری</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/st2.css">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- هدر -->
+    <header>
+        <div class="logo">
+            <img src="img/icon.ico" alt="Logo" width="40">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="cart.html">سبد خرید</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- فرم اطلاعات مشتری -->
+    <section id="customer-info">
+        <div class="form-container">
+            <h2>اطلاعات خود را وارد کنید</h2>
+            <form id="customer-form">
+                <div class="form-row">
+                    <label for="first-name">نام:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-row">
+                    <label for="last-name">فامیلی:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone-number">شماره تماس:</label>
+                    <input type="text" id="phone-number" name="phone-number" required>
+                </div>
+                <div class="form-row">
+                    <label for="postal-code">کدپستی:</label>
+                    <input type="text" id="postal-code" name="postal-code" required>
+                </div>
+                <div class="form-row">
+                    <label for="national-id">کد ملی:</label>
+                    <input type="text" id="national-id" name="national-id" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">ایمیل:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="terms" class="terms-label">
+                        <input type="checkbox" id="terms" required>
+                        <a href="terms.html" target="_blank">مقررات را بخوانید و قبول کنید</a>
+                    </label>
+                </div>
+                
+                
+
+                <button type="submit">پرداخت</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <p>کلیه حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

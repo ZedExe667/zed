@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه هکری</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/st2.css">
+
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    
+    <!-- اضافه کردن FontAwesome برای آیکون‌ها -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- هدر -->
+    <header>
+        <div class="logo">
+            <img src="img/icon.ico" alt="Logo" width="40"> <!-- لوگوی سایت -->
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li> <!-- لینک درباره ما -->
+                <li><a href="cart.html">سبد خرید</a></li> <!-- لینک سبد خرید -->
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="login.html" class="btn-signup">عضویت / ورود</a></li> <!-- لینک به صفحه ورود/ثبت نام -->
+            </ul>
+        </nav>
+        <!-- آیکون منو برای موبایل -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- بخش هرو -->
+    <section class="hero">
+        <h1>فروشگاه هکری</h1>
+        <p>به دنیای هک و فناوری خوش آمدید</p>
+        <a href="#" class="btn">دریافت محصولات</a>
+    </section>
+
+    <!-- بخش محصولات ویژه -->
+    <section id="featured-products">
+        <h2>محصولات ویژه</h2>
+        <div class="product-grid">
+            <!-- کارت محصول 1 -->
+            <div class="product-card">
+                <img src="img/1.jpg" alt="Product 1">
+                <h3>محصول 1</h3>
+                <p class="price">1,000,000 تومان</p>
+                <button class="btn" onclick="addToCart(1, 'محصول 1', '1,000,000', 'img/1.jpg')">خرید</button>
+            </div>
+            <!-- کارت محصول 2 -->
+            <div class="product-card">
+                <img src="img/2.jpg" alt="Product 2">
+                <h3>محصول 2</h3>
+                <p class="price">1,000,000 تومان</p>
+                <button class="btn" onclick="addToCart(2, 'محصول 2', '1,000,000', 'img/2.jpg')">خرید</button>
+            </div>
+            <!-- کارت محصول 3 -->
+            <div class="product-card">
+                <img src="img/3.jpg" alt="Product 3">
+                <h3>محصول 3</h3>
+                <p class="price">1,000,000 تومان</p>
+                <button class="btn" onclick="addToCart(3, 'محصول 3', '1,000,000', 'img/3.jpg')">خرید</button>
+            </div>
+            <!-- کارت محصول 4 -->
+            <div class="product-card">
+                <img src="img/4.jpg" alt="Product 4">
+                <h3>محصول 4</h3>
+                <p class="price">1,000,000 تومان</p>
+                <button class="btn" onclick="addToCart(4, 'محصول 4', '1,000,000', 'img/4.jpg')">خرید</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://t.me/zed_exe" target="_blank">
+                <i class="fab fa-telegram" style="font-size: 40px; color: #0088cc;"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/zed_exe-667" target="_blank">
+                <i class="fab fa-youtube" style="font-size: 40px; color: #ff0000;"></i>
+            </a>
+        </div>
+        <p>کلیه حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/mob.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/st2.css">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <!-- اگر نیاز به آیکون‌ها دارید، اینجا اضافه کنید -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- هدر -->
+    <header>
+        <div class="logo">
+            <img src="img/icon.ico" alt="Logo" width="40"> <!-- لوگوی سایت -->
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="cart.html">سبد خرید (<span id="cart-count">0</span>)</a></li> <!-- اضافه کردن تعداد محصولات در سبد خرید -->
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="login.html" class="btn-signup">عضویت / ورود</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    
+
+    <!-- بخش سبد خرید -->
+    <section id="cart">
+        <h2>سبد خرید</h2>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="total">
+            <p id="total-price">مجموع: 0 تومان</p>
+            <button class="btn" onclick="window.location.href='customer-form.html'">ادامه خرید</button>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <p>کلیه حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/mob.js"></script>
+</body>
+</html>

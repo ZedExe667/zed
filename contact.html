@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/st2.css">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+<body>
+    <!-- هدر -->
+    <header>
+        <div class="logo">
+            <img src="img/icon.ico" alt="Logo" width="40"> <!-- لوگوی سایت -->
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="about.html">درباره ما</a></li> 
+                <li><a href="cart.html">سبد خرید</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="login.html" class="btn-signup">عضویت / ورود</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- بخش تماس با ما -->
+    <section class="contact-form">
+        <h2>تماس با ما</h2>
+        <form action="php/send_email.php" method="post">
+            <label for="name">اسم و فامیل</label>
+            <input type="text" id="name" name="name" placeholder="اسم و فامیل خود را وارد کنید" required>
+            
+            <label for="email">ایمیل</label>
+            <input type="email" id="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
+            
+            <label for="message">پیام</label>
+            <textarea id="message" name="message" placeholder="پیام خود را بنویسید" required></textarea>
+            
+            <button type="submit" class="btn">ارسال به ایمیل</button>
+        </form>
+
+        <div class="alternative">
+            <p>اگر تمایلی به ارسال ایمیل ندارید، می‌توانید از طریق تلگرام با ما تماس بگیرید:</p>
+            <a href="https://t.me/zed_exe" target="_blank">
+                <button class="btn telegram-btn">ارسال از طریق تلگرام</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://t.me/zed_exe" target="_blank">
+                <i class="fab fa-telegram" style="font-size: 40px; color: #0088cc;"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/zed_exe-667" target="_blank">
+                <i class="fab fa-youtube" style="font-size: 40px; color: #ff0000;"></i>
+            </a>
+        </div>
+        <p>کلیه حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/mob.js"></script>
+</body>
+</html>

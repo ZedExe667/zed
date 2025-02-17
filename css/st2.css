@@ -1,0 +1,154 @@
+/* استایل برای متن‌های متحرک و تغییر رنگ */
+.glowing-text {
+    font-size: 2rem; /* اندازه فونت */
+    font-weight: bold; /* ضخیم بودن فونت */
+    color: #00F1FF; /* رنگ اولیه (آبی) */
+    text-align: center; /* تراز وسط متن */
+    animation: glowingText 5s linear infinite; /* اجرای افکت */
+    display: inline-block;
+}
+
+/* ایجاد افکت تغییر رنگ با استفاده از animation */
+@keyframes glowingText {
+    0% {
+        color: #00F1FF; /* آبی */
+        text-shadow: 0 0 5px #00F1FF, 0 0 10px #00F1FF, 0 0 15px #00F1FF;
+    }
+    25% {
+        color: #FF0000; /* قرمز */
+        text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 15px #FF0000;
+    }
+    50% {
+        color: #800080; /* بنفش */
+        text-shadow: 0 0 5px #800080, 0 0 10px #800080, 0 0 15px #800080;
+    }
+    75% {
+        color: #FF1493; /* صورتی */
+        text-shadow: 0 0 5px #FF1493, 0 0 10px #FF1493, 0 0 15px #FF1493;
+    }
+    100% {
+        color: #00F1FF; /* بازگشت به آبی */
+        text-shadow: 0 0 5px #00F1FF, 0 0 10px #00F1FF, 0 0 15px #00F1FF;
+    }
+}
+
+/* استایل برای لینک‌ها */
+a {
+    font-size: 1.2rem; /* اندازه فونت */
+    font-weight: bold; /* ضخیم بودن فونت */
+    color: #00F1FF; /* رنگ اولیه لینک‌ها */
+    text-decoration: none; /* حذف خط زیر لینک */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* اضافه کردن انتقال برای تغییرات */
+}
+
+a:hover {
+    color: #FF00FF; /* تغییر رنگ هنگام هاور */
+    text-decoration: underline; /* زیر خط دار شدن لینک */
+    text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF; /* افکت درخشان */
+}
+/* دکمه نئونی با افکت موجی */
+.wave-button {
+    background-color: transparent;
+    border: 2px solid #00BFFF;
+    color: #00BFFF;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 191, 255, 0.2);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+    transform: translate(-50%, -50%);
+}
+
+.wave-button:hover::after {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.wave-button:hover {
+    color: white;
+    box-shadow: 0 0 20px #00BFFF, 0 0 40px #00BFFF;
+}
+/* تغییر رنگ خودکار برای نام فروشگاه */
+.store-name {
+    animation: changeColor 5s infinite alternate; /* انیمیشن برای تغییر رنگ */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FF00FF; /* شروع رنگ */
+}
+
+/* انیمیشن تغییر رنگ */
+@keyframes changeColor {
+    0% {
+        color: #FF00FF; /* بنفش */
+    }
+    25% {
+        color: #00FFFF; /* آبی */
+    }
+    50% {
+        color: #00FF00; /* سبز */
+    }
+    75% {
+        color: #FFFF00; /* زرد */
+    }
+    100% {
+        color: #FF0000; /* قرمز */
+    }
+}
+
+/* تغییر رنگ برای متن‌های دیگر (غیر از "درباره ما") */
+body *:not(.about-us) {
+    animation: changeColor 5s infinite alternate; /* انیمیشن برای تغییر رنگ */
+    color: #FF00FF;
+}
+
+/* استایل مخصوص "درباره ما" برای اینکه تغییر رنگ نخورد */
+.about-us {
+    color: #FFFFFF; /* رنگ ثابت برای بخش درباره ما */
+}
+
+/* بقیه استایل‌ها (برای لینک‌ها، دکمه‌ها و ... مانند قبل) */
+a {
+    color: #FF00FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF0000;
+    text-decoration: underline;
+}
+/* منو به صورت افقی و معکوس شده */
+.menu {
+    display: flex;
+    flex-direction: row-reverse; /* ترتیب آیتم‌ها به صورت معکوس */
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px; /* فاصله بین آیتم‌ها */
+    font-size: 1.2rem;
+    color: #00FF00;
+    cursor: pointer;
+}
+
+/* برای تنظیم ظاهر و هاور روی لینک‌ها */
+.menu li:hover {
+    color: #FF00FF;
+}
